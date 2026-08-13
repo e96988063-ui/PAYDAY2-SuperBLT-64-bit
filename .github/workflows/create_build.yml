@@ -32,7 +32,7 @@ jobs:
         msbuild SuperBLT.sln /p:Configuration=Release /p:Platform=x64
 
     - name: Upload Artifact
-      uses: actions/actions-runner-share/upload-artifact@v4
+      uses: actions/upload-artifact@v4
       with:
         name: SuperBLT-x64-DLL
         path: build/Release/WSOCK32.dll
